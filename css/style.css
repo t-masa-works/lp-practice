@@ -126,8 +126,6 @@ a {
 }
 
 .skills-items {
-  /* display: grid;
-  grid-template-columns: repeat(3, 300px); */
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
