@@ -55,7 +55,6 @@ a {
 -----------------------------------------------*/
 .key-visual {
   width: 100%;
-  height: 935px;
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center center/cover;
   display: grid;
   place-items: center;
@@ -66,6 +65,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin: 400px 0;
 }
 
 .key-visual-main-title {
@@ -158,9 +158,6 @@ a {
 .plan {
   background: #d0dfea;
   padding: 50px 0;
-}
-
-.plan-inner {
 }
 
 .plan-head {
