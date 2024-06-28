@@ -13,6 +13,12 @@ a {
   margin-right: auto;
 }
 
+@media screen and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
+}
+
 .section-title {
   font-size: 40px;
   letter-spacing: 10px;
@@ -50,6 +56,46 @@ a {
   transition: color 0.3s;
 }
 
+.header-hamb {
+  border: solid 1px lightgray;
+  width: 50px;
+  height: 40px;
+  border-radius: 3px;
+  display: none;
+  cursor: pointer;
+}
+
+.header-hamb-bars {
+  position: relative;
+}
+
+.header-hamb-bar {
+  width: 30px;
+  height: 3px;
+  background: lightgray;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-hamb-bar:nth-of-type(1) {
+  top: 9px;
+}
+.header-hamb-bar:nth-of-type(2) {
+  top: 19px;
+}
+.header-hamb-bar:nth-of-type(3) {
+  top: 29px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-hamb {
+    display: block;
+  }
+  .header-btn {
+    display: none;
+  }
+}
 /*----------------------------------------------
   key-visual
 -----------------------------------------------*/
@@ -78,6 +124,25 @@ a {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .key-visual-title {
+    margin: 200px 0;
+  }
+
+  .key-visual-main-title {
+    font-size: 40px;
+  }
+
+  .key-visual-sub-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .key-visual-title {
+    margin: 250px 0;
+  }
+}
 /*----------------------------------------------
   work
 -----------------------------------------------*/
@@ -116,6 +181,25 @@ a {
   word-break: break-all;
 }
 
+@media screen and (max-width: 1199px) {
+  .work {
+    padding-bottom: 50px;
+  }
+
+  .work-inner {
+    display: block;
+  }
+
+  .image-box {
+    width: 100%;
+  }
+
+  .work-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /*----------------------------------------------
   skills
 -----------------------------------------------*/
@@ -150,6 +234,29 @@ a {
 
 .skills-item:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 1199px) {
+  .skills-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-item img {
+    vertical-align: bottom;
+  }
+
+  .skills-items .skills-item {
+    margin-right: 0;
+  }
+
+  .skills-item:nth-child(n + 4) {
+    margin-top: 0;
+  }
+
+  .skills-item:nth-child(3n + 1) {
+    margin-top: 80px;
+  }
 }
 
 /*----------------------------------------------
@@ -194,6 +301,17 @@ tr:nth-child(2n) {
   border-left: 2px solid #fff;
 }
 
+@media screen and (max-width: 767px) {
+  th {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+}
+
 /*----------------------------------------------
   sns
 -----------------------------------------------*/
@@ -222,6 +340,22 @@ tr:nth-child(2n) {
 
 .sns-icon a {
   color: #8c8c8c;
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .sns {
+    padding: 50px 15px;
+  }
+  .sns-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sns-icon {
+    width: 100%;
+    padding: 50px 0;
+  }
 }
 
 /*----------------------------------------------
